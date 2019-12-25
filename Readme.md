@@ -16,13 +16,13 @@ Clone the repository inside your oh-my-zsh repo:
 
 Enable it in your `.zshrc` by adding it to your plugin list and reloading the completion:
 
-	plugins=(… zsh-completions)
+	plugins=(… osx-zsh-completions)
 	autoload -U compinit && compinit
 
 ## Manual Install
 Clone:
 
-	git clone git://github.com/nilsonholger/... .zsh/osx-zsh-completions
+	git clone https://github.com/ttimasdf/osx-zsh-completions .zsh/osx-zsh-completions
 
 Modify `.zshrc`:
 
