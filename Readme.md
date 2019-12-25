@@ -7,13 +7,26 @@ feature-complete auto completions.
 
 INSTALLATION
 ============
+
+## As oh-my-zsh plugin
+
+Clone the repository inside your oh-my-zsh repo:
+
+	git clone https://github.com/ttimasdf/osx-zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/osx-zsh-completions
+
+Enable it in your `.zshrc` by adding it to your plugin list and reloading the completion:
+
+	plugins=(… zsh-completions)
+	autoload -U compinit && compinit
+
+## Manual Install
 Clone:
 
 	git clone git://github.com/nilsonholger/... .zsh/osx-zsh-completions
 
 Modify `.zshrc`:
 
-	fpath=(~/.zsh/osx-zsh-completions/ $fpath)
+	fpath=(~/.zsh/osx-zsh-completions/src $fpath)
 	autoload -Uz compinit
 	compinit -d ~/.zcompdump
 
