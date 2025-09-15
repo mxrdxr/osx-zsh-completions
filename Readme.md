@@ -12,17 +12,29 @@ INSTALLATION
 
 Clone the repository inside your oh-my-zsh repo:
 
-	git clone https://github.com/ttimasdf/osx-zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/osx-zsh-completions
+	git clone https://github.com/mxrdxr/osx-zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/osx-zsh-completions
 
 Enable it in your `.zshrc` by adding it to your plugin list and reloading the completion:
 
 	plugins=(… osx-zsh-completions)
 	autoload -U compinit && compinit
 
+## z-shell, zi, zinit
+
+Add the following to `.zshrc` (use `zi` or `zinit` accordingly)
+
+ 	zi load mxrdxr/osx-zsh-completions
+
+To use Turbo mode:
+
+	zi wait lucid atload'zicompinit; zicdreplay' atpull'zi creinstall -q .' for \
+ 		mxrdxr/osx-zsh-completions
+
+
 ## Manual Install
 Clone:
 
-	git clone https://github.com/ttimasdf/osx-zsh-completions .zsh/osx-zsh-completions
+	git clone https://github.com/mxrdxr/osx-zsh-completions ~/.zsh/osx-zsh-completions
 
 Modify `.zshrc`:
 
